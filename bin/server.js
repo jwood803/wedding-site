@@ -1,10 +1,10 @@
 "use strict";
 
 //module dependencies.
-var express = require("express");
+var app = require("../app");
 var http = require("http");
 
-var app = express();
+//var app = express();
 
 //get port from environment and store in Express.
 var port = normalizePort(process.env.PORT || 8080);
