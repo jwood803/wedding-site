@@ -44,6 +44,7 @@ jspm_packages
 # Typings
 typings
 .tscache
+.baseDir.js
 
 app/**/*.js
 app/**/*.js.map
