@@ -11,4 +11,57 @@ h2, h3 {
 body {
   margin: 2em;
   padding-top: 20px;
+  background-color: mintcream;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(214, 199, 199, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 14px;
+    background-color: rgba(68, 122, 61, 1);
+    background: -webkit-linear-gradient(top, rgba(49, 153, 70, 1) 0%, rgba(68, 122, 61, 1) 100%);
+    background: linear-gradient(to bottom, rgba(49, 153, 70, 1) 0%, rgba(68, 122, 61, 1) 100%);
+    border-bottom-width: 0px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(214, 199, 199, 1);
+    background-color: rgba(68, 122, 61, 1);
+    background: -webkit-linear-gradient(top, rgba(49, 153, 70, 1) 0%, rgba(68, 122, 61, 1) 100%);
+    background: linear-gradient(to bottom, rgba(49, 153, 70, 1) 0%, rgba(68, 122, 61, 1) 100%);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(51, 51, 51, 1);
+    background-color: rgba(28, 15, 15, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(201, 173, 173, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #c9adad;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #c9adad;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #c9adad;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #447a3d;
 }
