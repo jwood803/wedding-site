@@ -1,14 +1,13 @@
 h1 {
   color: #369;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
 h2, h3 {
   color: #444;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
 body {
+  font-family: 'Satisfy', cursive;
   margin: 2em;
   padding-top: 20px;
   background-color: mintcream;
@@ -30,8 +29,12 @@ body {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
+  background-color: rgba(68, 122, 61, 1);
   text-align: center;
+}
+
+.footer p {
+    color: white;
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
