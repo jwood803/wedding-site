@@ -37,6 +37,11 @@ body {
     color: white;
 }
 
+.logo-nav {
+    max-width: 5%;
+    height: auto;
+}
+
 .navbar-default .navbar-brand {
     color: rgba(214, 199, 199, 1);
 }
