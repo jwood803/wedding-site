@@ -1,6 +1,6 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { WeddingComponent } from './wedding.component';
+import { WeddingComponent } from './wedding/wedding.component';
 import { RsvpComponent } from './rsvp/rsvp.component';
 import { RegistryComponent } from './registry/registry.component';
 
