@@ -5,7 +5,7 @@ import { CollapseDirective } from 'ng2-bootstrap';
   moduleId: module.id,
   selector: 'wedding-app',
   directives: [CollapseDirective],
-  templateUrl: `app.component.html`,
+  templateUrl: `wedding.component.html`,
   styles: ['#body { text-align: center; }']
 })
 export class WeddingComponent { 
