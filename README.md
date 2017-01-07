@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jwood803/wedding-site.svg?branch=master)](https://travis-ci.org/jwood803/wedding-site)
+
 # WeddingSite
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
