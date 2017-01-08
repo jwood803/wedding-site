@@ -1,4 +1,28 @@
-<h3>RSVP here</h3>
-<form method="post">
-
+<form id="rsvp" method="POST">
+	<h2>RSVP</h2>
+	<br>
+	<div>
+		<p>Please RSVP by August 31st.</p>
+	</div>
+	<div>
+		<p>
+			I, <input name="guest-name" id="guest-name" type="text" placeholder="Your name"/>,
+			<select name="inviteStatus">
+				<option value="0">The World is Not Enough</option>
+				<option selected value="1">Wouldn’t Miss It For the World</option>
+			</select>
+		</p>
+	</div>
+		I plan on bringing 
+		<select name="guest-type" (ngModelChange)="onGuestTypeChange($event)">
+			<option selected value="0">myself</option>
+			<option value="1">a date</option>
+		</select>
+		<div *ngIf="isGuestBringingDate">
+			<p>
+				My date's name is <input name="guest-date-name" id="guest-date-name" type="text" placeholder="Date name"/>.
+			</p>
+		</div>
+		<br>
+	<input id="rsvp-submit" type="button" value="Submit Response"/>
 </form>
