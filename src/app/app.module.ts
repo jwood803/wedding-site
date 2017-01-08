@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RegistryComponent } from './registry/registry.component';
 import { RsvpComponent } from './rsvp/rsvp.component';
+import { RsvpService } from './rsvp/rsvp.service';
 import { routing } from './app.routing';
 
 export const firebaseConfig = {
@@ -31,7 +32,7 @@ export const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     routing
   ],
-  providers: [],
+  providers: [RsvpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
