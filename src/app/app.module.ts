@@ -9,6 +9,7 @@ import { RegistryComponent } from './registry/registry.component';
 import { RsvpComponent } from './rsvp/rsvp.component';
 import { RsvpService } from './rsvp/rsvp.service';
 import { routing } from './app.routing';
+import { PhotosComponent } from './photos/photos.component';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyB2joa4kZf8ftWbLCsBtHsmdsaVe021T58",
@@ -23,7 +24,8 @@ export const firebaseConfig = {
     AppComponent,
     HomeComponent,
     RegistryComponent,
-    RsvpComponent
+    RsvpComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,
