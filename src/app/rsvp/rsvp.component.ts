@@ -26,7 +26,6 @@ export class RsvpComponent {
         position: ['right', 'top']
     };
 
-
   constructor(private rsvpService: RsvpService, private notificationService: NotificationsService) {
     this.inviteStatus = "going";
     this.guestType = "self";
@@ -43,7 +42,7 @@ export class RsvpComponent {
     let successMessage = "Your RSVP has been sent! Can't wait to see you there!";
 
     if(form.inviteStatus !== "going") {
-      successMessage = "Sorry you can't make it :("
+      successMessage = "Sorry you can't make it :(";
     }
 
     this.rsvpService.postRsvp(form)
