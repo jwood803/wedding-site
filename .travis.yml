@@ -3,7 +3,6 @@ node_js:
   - "stable"
 before_script:
   - npm install -g angular-cli
-  - npm install
   - typings install
   - tsc
   - ng build
