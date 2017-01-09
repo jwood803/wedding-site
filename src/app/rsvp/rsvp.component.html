@@ -1,5 +1,5 @@
 <div class="container">
-	<form id="rsvp" method="POST" #rsvpFormRef="ngForm" (ngSubmit)="onSubmit(rsvpFormRef.value)" novalidate>
+	<form id="rsvp" #rsvpFormRef="ngForm" (ngSubmit)="onSubmit(rsvpFormRef.value)" novalidate>
 		<h2>RSVP</h2>
 		<br>
 		<div>
@@ -8,7 +8,7 @@
 		<div>
 			<p>
 				I, <input name="name" id="name" type="text" placeholder="Your name" [ngModel]="name"/>,
-				<select name="inviteStatus" [ngModel]="inviteStatus" (change)="onInviteStatusChange($event.target.value)">
+				<select name="inviteStatus" [ngModel]="inviteStatus">
 					<option value="notGoing">The World is Not Enough</option>
 					<option selected value="going">Wouldn’t Miss It For the World</option>
 				</select>
