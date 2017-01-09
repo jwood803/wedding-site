@@ -4,6 +4,8 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class RsvpService {
+  private firebaseUrl = "https://wedding-1483790611518.firebaseio.com/";
+
   constructor(private http: Http) { }
 
   postRsvp(rsvp) {
@@ -12,7 +14,7 @@ export class RsvpService {
 
     headers.append('Content-Type', 'application/json');
 
-    return this.http.post("https://wedding-1483790611518.firebaseio.com/rsvps.json", body, { headers: headers })
+    return this.http.post(this.firebaseUrl + "rsvps.json", body, { headers: headers })
       .map((resp: Response) => resp.json());
   }
 }

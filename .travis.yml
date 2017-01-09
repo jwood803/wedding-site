@@ -3,10 +3,7 @@ node_js:
   - "stable"
 before_script:
   - npm install -g angular-cli
-  - typings install
-  - tsc
   - ng build
-  - ng serve &
 deploy:
   provider: azure_web_apps
   skip_cleanup: true
