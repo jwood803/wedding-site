@@ -8,20 +8,29 @@
 		<div>
 			<p>
 				I, <input name="name" id="name" type="text" placeholder="Your name" [ngModel]="name"/>,
-				<select name="inviteStatus" [ngModel]="inviteStatus">
+				<select class="dropdown" name="inviteStatus" [ngModel]="inviteStatus">
 					<option value="notGoing">The World is Not Enough</option>
 					<option selected value="going">Wouldn’t Miss It For the World</option>
 				</select>
 			</p>
 		</div>
 			I plan on bringing 
-			<select name="guestType" [ngModel]="guestType" (change)="onGuestTypeChange($event.target.value)">
+			<select class="dropdown" name="guestType" [ngModel]="guestType" (change)="onGuestTypeChange($event.target.value)">
 				<option selected value="self">myself</option>
-				<option value="selfPlusDate">myself plus one</option>
+				<option value="selfPlusOne">myself plus one</option>
+				<option value="selfPlusTwo">myself plus two</option>
 			</select>
-			<div *ngIf="isGuestBringingDate">
+			<div *ngIf="isGuestBringingOneDate && !isGuestBringingTwoDates">
 				<p>
-					My date's name is <input name="dateName" id="dateName" type="text" [ngModel]="dateName" placeholder="Date name"/>
+					My guest's name is <input name="guestName" id="guestName" type="text" [ngModel]="guestName" placeholder="Guest name"/>
+				</p>
+			</div>
+			<div *ngIf="isGuestBringingTwoDates && !isGuestBringingOneDate">
+				<p>
+					My first guest's name is <input name="guestName" id="guestName" type="text" [ngModel]="guestName" placeholder="First guest's name"/>
+				</p>
+				<p>
+					My second guest's name is <input name="secondGuestName" id="secondGuestName" type="text" [ngModel]="secondGuestName" placeholder="Second guest's name"/>
 				</p>
 			</div>
 			<br>

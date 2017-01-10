@@ -13,7 +13,6 @@ export class RsvpService {
 
     rsvp.createdDate = now.toLocaleString();
 
-
     const body = JSON.stringify(rsvp);
     const headers = new Headers();
 
