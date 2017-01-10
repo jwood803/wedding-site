@@ -9,7 +9,8 @@ export class RsvpComponent {
   rsvps: any;
   inviteStatus: string;
   guestType: string;
-  isGuestBringingDate: boolean;
+  isGuestBringingOneDate: boolean;
+  isGuestBringingTwoDates: boolean;
 
   public notificationOptions = {
         timeOut: 3000,
@@ -26,24 +27,33 @@ export class RsvpComponent {
         position: ['right', 'top']
     };
 
-
   constructor(private rsvpService: RsvpService, private notificationService: NotificationsService) {
     this.inviteStatus = "going";
     this.guestType = "self";
   }
 
   onGuestTypeChange(value) {
-    if(this.guestType === "selfPlusDate") {
-      this.isGuestBringingDate = true;
+    if(value === "self") {
+      this.isGuestBringingOneDate = false;
+      this.isGuestBringingTwoDates = false;
+    }
+
+    if(value === "selfPlusOne") {
+      this.isGuestBringingOneDate = true;
+      this.isGuestBringingTwoDates = false;
+    }
+
+    if(value === "selfPlusTwo") {
+      this.isGuestBringingTwoDates = true;
+      this.isGuestBringingOneDate = false;
     }
   }
 
   onSubmit(form) {
-    console.log(form);
     let successMessage = "Your RSVP has been sent! Can't wait to see you there!";
 
     if(form.inviteStatus !== "going") {
-      successMessage = "Sorry you can't make it :("
+      successMessage = "Sorry you can't make it :(";
     }
 
     this.rsvpService.postRsvp(form)
