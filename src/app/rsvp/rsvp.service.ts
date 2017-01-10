@@ -9,6 +9,11 @@ export class RsvpService {
   constructor(private http: Http) { }
 
   postRsvp(rsvp) {
+    let now = new Date();
+
+    rsvp.createdDate = now.toLocaleString();
+
+
     const body = JSON.stringify(rsvp);
     const headers = new Headers();
 
