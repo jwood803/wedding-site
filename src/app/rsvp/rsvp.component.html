@@ -14,25 +14,25 @@
 				</select>
 			</p>
 		</div>
-			I plan on bringing 
+			I plan on bringing
 			<select class="custom-select" name="guestType" [ngModel]="guestType" (change)="onGuestTypeChange($event.target.value)">
 				<option selected value="self">myself</option>
 				<option value="selfPlusOne">myself plus one</option>
-				<option value="selfPlusTwo">myself plus two</option>
+				<!--<option value="selfPlusTwo">myself plus two</option>-->
 			</select>
 			<div *ngIf="isGuestBringingOneDate && !isGuestBringingTwoDates">
 				<p>
 					My guest's name is <input name="guestName" id="guestName" type="text" [ngModel]="guestName" placeholder="Guest name"/>
 				</p>
 			</div>
-			<div *ngIf="isGuestBringingTwoDates && !isGuestBringingOneDate">
+			<!--<div *ngIf="isGuestBringingTwoDates && !isGuestBringingOneDate">
 				<p>
 					My first guest's name is <input name="guestName" id="guestName" type="text" [ngModel]="guestName" placeholder="First guest's name"/>
 				</p>
 				<p>
 					My second guest's name is <input name="secondGuestName" id="secondGuestName" type="text" [ngModel]="secondGuestName" placeholder="Second guest's name"/>
 				</p>
-			</div>
+			</div>-->
 			<br>
 		<button type="submit" class="form-control btn">Send RSVP</button>
 	</form>
