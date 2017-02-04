@@ -25,11 +25,11 @@ body {
   background-color: rgba(68, 122, 61, 1);
   position: absolute;
   bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
   height: 25px;
-  text-align: center;
   font-size: 14px;
+  margin: 0 auto !important;
+  text-align: center !important;
+  width: 95% !important;
 }
 
 .footer p {
