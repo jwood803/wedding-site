@@ -1,7 +1,9 @@
-<nav>
-    <a routerLink="/rsvp">RSVP</a>
-    <a routerLink="/">Home</a>
-    <a routerLink="/registry">Registry</a>
-    <a routerLink="/photos">Photos</a>
-</nav>
+<div class="navbar-nav sticky-top">
+  <nav class="navbar navbar-light navbar-text">
+    <a routerlink="/rsvp" ng-reflect-router-link="/rsvp" ng-reflect-href="/rsvp" href="/rsvp">RSVP</a>
+    <a routerlink="/" ng-reflect-router-link="/" ng-reflect-href="/" href="/">Home</a>
+    <a routerlink="/registry" ng-reflect-router-link="/registry" ng-reflect-href="/registry" href="/registry">Registry</a>
+    <!--<a routerlink="/photos" ng-reflect-router-link="/photos" ng-reflect-href="/photos" href="/photos">Photos</a>-->
+  </nav>
+</div>
 <router-outlet></router-outlet>

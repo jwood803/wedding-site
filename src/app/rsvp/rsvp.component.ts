@@ -10,22 +10,6 @@ export class RsvpComponent {
   inviteStatus: string;
   guestType: string;
   isGuestBringingOneDate: boolean;
-  isGuestBringingTwoDates: boolean;
-
-  public notificationOptions = {
-        timeOut: 3000,
-        lastOnBottom: false,
-        clickToClose: true,
-        maxLength: 0,
-        maxStack: 2,
-        showProgressBar: false,
-        pauseOnHover: true,
-        preventDuplicates: false,
-        preventLastDuplicates: 'visible',
-        rtl: false,
-        animate: 'scale',
-        position: ['right', 'top']
-    };
 
   constructor(private rsvpService: RsvpService, private notificationService: NotificationsService) {
     this.inviteStatus = "going";
@@ -35,16 +19,13 @@ export class RsvpComponent {
   onGuestTypeChange(value) {
     if(value === "self") {
       this.isGuestBringingOneDate = false;
-      this.isGuestBringingTwoDates = false;
     }
 
     if(value === "selfPlusOne") {
       this.isGuestBringingOneDate = true;
-      this.isGuestBringingTwoDates = false;
     }
 
     if(value === "selfPlusTwo") {
-      this.isGuestBringingTwoDates = true;
       this.isGuestBringingOneDate = false;
     }
   }
