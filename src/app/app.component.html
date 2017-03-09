@@ -1,9 +1,26 @@
-<div class="navbar-nav sticky-top">
-  <nav class="navbar navbar-light navbar-text">
-    <a routerlink="/rsvp" ng-reflect-router-link="/rsvp" ng-reflect-href="/rsvp" href="/rsvp">RSVP</a>
-    <a routerlink="/" ng-reflect-router-link="/" ng-reflect-href="/" href="/">Home</a>
-    <a routerlink="/registry" ng-reflect-router-link="/registry" ng-reflect-href="/registry" href="/registry">Registry</a>
-    <!--<a routerlink="/photos" ng-reflect-router-link="/photos" ng-reflect-href="/photos" href="/photos">Photos</a>-->
-  </nav>
+<!--<div class="navbar-nav sidebar-nav">-->
+  <!--<nav class="navbar navbar-light navbar-text">-->
+    <!--&lt;!&ndash;<a routerlink="/photos" ng-reflect-router-link="/photos" ng-reflect-href="/photos" href="/photos">Photos</a>&ndash;&gt;-->
+  <!--</nav>-->
+<!--</div>-->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="sidebar-nav">
+        <div class="navbar navbar-default navbar-toggle" role="navigation">
+          <div class="navbar-header">
+            <ul class="nav navbar-nav list-group">
+              <li class="list-group-item"><a routerlink="/rsvp" ng-reflect-router-link="/rsvp" ng-reflect-href="/rsvp" href="/rsvp">RSVP</a></li>
+              <li class="list-group-item"><a routerlink="/" ng-reflect-router-link="/" ng-reflect-href="/" href="/">Home</a></li>
+              <li class="list-group-item"><a routerlink="/destination" ng-reflect-router-link="/destination" ng-reflect-href="/destination" href="/destination">Location</a></li>
+              <li class="list-group-item"><a routerlink="/registry" ng-reflect-router-link="/registry" ng-reflect-href="/registry" href="/registry">Registry</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
-<router-outlet></router-outlet>

@@ -13,12 +13,17 @@ h2, h3 {
   font-weight: lighter;
 }
 body {
+  font-family: 'Clicker Script', cursive;
   margin: 2em;
   padding-top: 20px;
-  background-color: mintcream;
+  background:url("./assets/img/paul-earle-183430.jpg") top right no-repeat; background-attachment:fixed;;
   font-size: 22px;
   text-align: center;
   margin-bottom: 60px;
+}
+
+input {
+  font-family: 'Clicker Script', cursive;
 }
 
 .footer {
@@ -64,6 +69,7 @@ select {
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
+  font-family: 'Clicker Script', cursive;
 }
 
 nav {
@@ -74,4 +80,24 @@ nav.navbar > a {
   color: mintcream;
   padding-left:100px;
   padding-right:100px;
+}
+
+/* make sidebar nav vertical */
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
