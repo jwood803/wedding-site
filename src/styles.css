@@ -16,7 +16,8 @@ body {
   font-family: 'Clicker Script', cursive;
   margin: 2em;
   padding-top: 20px;
-  background:url("./assets/img/paul-earle-183430.jpg") top right no-repeat; background-attachment:fixed;;
+  background:url("./assets/img/paul-earle-183430.jpg") top right no-repeat; background-attachment:fixed;
+  background-position: center center;
   font-size: 22px;
   text-align: center;
   margin-bottom: 60px;
@@ -27,7 +28,6 @@ input {
 }
 
 .footer {
-  background-color: rgba(68, 122, 61, 1);
   position: absolute;
   bottom: 0;
   height: 25px;

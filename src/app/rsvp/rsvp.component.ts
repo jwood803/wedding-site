@@ -6,7 +6,6 @@ import { RsvpService } from './rsvp.service';
   templateUrl: `./rsvp.component.html`
 })
 export class RsvpComponent {
-  rsvps: any;
   inviteStatus: string;
   guestType: string;
   isGuestBringingOneDate: boolean;
@@ -16,17 +15,27 @@ export class RsvpComponent {
     this.guestType = "self";
   }
 
-  onGuestTypeChange(value) {
+  public notificationOptions = {
+      lastOnBottom: false,
+      clickToClose: true,
+      maxLength: 0,
+      maxStack: 2,
+      showProgressBar: false,
+      pauseOnHover: true,
+      preventDuplicates: false,
+      preventLastDuplicates: 'visible',
+      rtl: false,
+      animate: 'scale',
+      position: ['right', 'top']
+  };
+
+onGuestTypeChange(value) {
     if(value === "self") {
       this.isGuestBringingOneDate = false;
     }
 
     if(value === "selfPlusOne") {
       this.isGuestBringingOneDate = true;
-    }
-
-    if(value === "selfPlusTwo") {
-      this.isGuestBringingOneDate = false;
     }
   }
 

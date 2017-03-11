@@ -6,6 +6,7 @@ import { SimpleNotificationsModule } from 'angular2-notifications';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RegistryComponent } from './registry/registry.component';
+import { LocationComponent } from './location/location.component';
 import { RsvpComponent } from './rsvp/rsvp.component';
 import { RsvpService } from './rsvp/rsvp.service';
 import { routing } from './app.routing';
@@ -25,7 +26,8 @@ export const firebaseConfig = {
     HomeComponent,
     RegistryComponent,
     RsvpComponent,
-    PhotosComponent
+    PhotosComponent,
+    LocationComponent
   ],
   imports: [
     BrowserModule,

@@ -8,14 +8,14 @@
 		<div>
 			<p>
 				I, <input name="name" id="name" type="text" placeholder="Your name" [ngModel]="name"/>,
-				<select class="custom-select" name="inviteStatus" [ngModel]="inviteStatus">
+				<select title="" class="custom-select" name="inviteStatus" [ngModel]="inviteStatus">
 					<option value="notGoing">am unable to attend</option>
 					<option selected value="going">will joyfully attend</option>
 				</select>
 			</p>
 		</div>
 			I plan on bringing
-			<select class="custom-select" name="guestType" [ngModel]="guestType" (change)="onGuestTypeChange($event.target.value)">
+			<select title="" class="custom-select" name="guestType" [ngModel]="guestType" (change)="onGuestTypeChange($event.target.value)">
 				<option selected value="self">myself</option>
 				<option value="selfPlusOne">myself plus one</option>
 			</select>
