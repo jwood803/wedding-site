@@ -76,10 +76,14 @@ nav {
   background-color: rgba(68, 122, 61, 1);
 }
 
-nav.navbar > a {
+.navbar-header > ul > li > a {
   color: mintcream;
-  padding-left:100px;
-  padding-right:100px;
+}
+
+.navbar-header > ul > li {
+  background:none;
+  border:none;
+  box-shadow:none;
 }
 
 /* make sidebar nav vertical */
