@@ -1,10 +1,12 @@
 <div class="container">
-	<form id="rsvp" #rsvpFormRef="ngForm" (ngSubmit)="onSubmit(rsvpFormRef.value)" novalidate>
-		<h2>RSVP</h2>
+  <h2>RSVP</h2>
+
+  <div>
+    <p>Please RSVP by July 17th.</p>
+  </div>
+
+  <form class="form-inline" id="rsvp" #rsvpFormRef="ngForm" (ngSubmit)="onSubmit(rsvpFormRef.value)" novalidate>
 		<br>
-		<div>
-			<p>Please RSVP by August 31st.</p>
-		</div>
 		<div>
 			<p>
 				I, <input name="name" id="name" type="text" placeholder="Your name" [ngModel]="name"/>,
@@ -14,17 +16,19 @@
 				</select>
 			</p>
 		</div>
+    <div>
 			I plan on bringing
 			<select title="" class="custom-select" name="guestType" [ngModel]="guestType" (change)="onGuestTypeChange($event.target.value)">
 				<option selected value="self">myself</option>
 				<option value="selfPlusOne">myself plus one</option>
 			</select>
-			<div *ngIf="isGuestBringingOneDate">
-				<p>
-					My guest's name is <input name="guestName" id="guestName" type="text" [ngModel]="guestName" placeholder="Guest name"/>
-				</p>
-			</div>
-			<br>
+    </div>
+    <div *ngIf="isGuestBringingOneDate">
+      <p>
+        My guest's name is <input name="guestName" id="guestName" type="text" [ngModel]="guestName" placeholder="Guest name"/>
+      </p>
+    </div>
+
 		<button type="submit" class="btn btn-default">Send RSVP</button>
 	</form>
 	<simple-notifications [options]="notificationOptions"></simple-notifications>

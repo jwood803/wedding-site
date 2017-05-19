@@ -4,7 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { RsvpComponent } from './rsvp/rsvp.component';
 import { RegistryComponent } from './registry/registry.component';
 import { PhotosComponent } from './photos/photos.component';
-import {LocationComponent} from "./location/location.component";
+import { LocationComponent } from "./location/location.component";
+import { AccommodationsComponent } from "./accommodations/accommodations.component";
+import { OutAndAboutComponent } from "./outAndAbout/outAndAbout.component";
 
 const appRoutes: Routes = [
 	{
@@ -26,6 +28,14 @@ const appRoutes: Routes = [
   {
     path: 'photos',
     component: PhotosComponent
+  },
+  {
+    path: 'accommodations',
+    component: AccommodationsComponent
+  },
+  {
+    path: 'out',
+    component: OutAndAboutComponent
   }
 ];
 

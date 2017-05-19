@@ -7,13 +7,28 @@ html {
 h1 {
   color: #369;
   font-size: 250%;
+  font-family: 'Clicker Script', cursive;
 }
-h2, h3 {
+h2 {
   color: #444;
   font-weight: lighter;
-}
-body {
   font-family: 'Clicker Script', cursive;
+}
+
+h3 {
+  font-family: 'Clicker Script', cursive;
+}
+
+.fancy-font {
+  font-family: 'Clicker Script', cursive;
+}
+
+li {
+  text-align: initial;
+  font-family: "Bell MT", cursive;
+}
+
+body {
   margin: 2em;
   padding-top: 20px;
   background:url("./assets/img/paul-earle-183430.jpg") top right no-repeat; background-attachment:fixed;
@@ -23,8 +38,16 @@ body {
   margin-bottom: 60px;
 }
 
+p {
+  font-family: "Bell MT", cursive;
+}
+
 input {
-  font-family: 'Clicker Script', cursive;
+  font-family: "Bell MT", cursive;
+}
+
+button {
+  color: slategray;
 }
 
 .footer {
@@ -69,7 +92,7 @@ select {
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-family: 'Clicker Script', cursive;
+  font-family: 'Bell MT', cursive;
 }
 
 nav {
@@ -84,6 +107,10 @@ nav {
   background:none;
   border:none;
   box-shadow:none;
+}
+
+.pad-left {
+  margin-left: 10%;
 }
 
 /* make sidebar nav vertical */

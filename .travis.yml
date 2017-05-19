@@ -1,9 +1,0 @@
-language: node_js
-node_js:
-  - "stable"
-before_script:
-  - npm install -g angular-cli
-  - ng build
-deploy:
-  provider: azure_web_apps
-  skip_cleanup: true
