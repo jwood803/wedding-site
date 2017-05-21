@@ -37,7 +37,7 @@ export const firebaseConfig = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    SimpleNotificationsModule,
+    SimpleNotificationsModule.forRoot(),
     routing
   ],
   providers: [RsvpService],

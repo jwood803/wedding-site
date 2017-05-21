@@ -5,9 +5,9 @@
     <p>Please RSVP by July 17th.</p>
   </div>
 
-  <form class="form-inline" id="rsvp" #rsvpFormRef="ngForm" (ngSubmit)="onSubmit(rsvpFormRef.value)" novalidate>
+  <form id="rsvp" #rsvpFormRef="ngForm" (ngSubmit)="onSubmit(rsvpFormRef.value)" novalidate>
 		<br>
-		<div>
+		<div class="form-group">
 			<p>
 				I, <input name="name" id="name" type="text" placeholder="Your name" [ngModel]="name"/>,
 				<select title="" class="custom-select" name="inviteStatus" [ngModel]="inviteStatus">
@@ -16,14 +16,15 @@
 				</select>
 			</p>
 		</div>
-    <div>
-			I plan on bringing
+    <div class="form-group">
+      <p>I plan on bringing
 			<select title="" class="custom-select" name="guestType" [ngModel]="guestType" (change)="onGuestTypeChange($event.target.value)">
 				<option selected value="self">myself</option>
 				<option value="selfPlusOne">myself plus one</option>
 			</select>
+      </p>
     </div>
-    <div *ngIf="isGuestBringingOneDate">
+    <div class="form-group" *ngIf="isGuestBringingOneDate">
       <p>
         My guest's name is <input name="guestName" id="guestName" type="text" [ngModel]="guestName" placeholder="Guest name"/>
       </p>
